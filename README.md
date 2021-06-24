@@ -10,4 +10,4 @@
 
 
 ## Deploy
-* **Repl:** [![Run on Repl.it](https://repl.it/badge/github/Red-Aura/Anime-Web-Watch)](https://repl.it/github/Red-Aura/Anime-Web-Watch)
+* **Repl:** [![Run on Repl.it](https://repl.it/badge/github/MoeZilla/Anime-Web-Watch)](https://repl.it/github/MoeZilla/Anime-Web-Watch)
