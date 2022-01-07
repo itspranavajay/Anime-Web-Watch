@@ -2,7 +2,6 @@ const http = require('http');
 const express = require('express');
 const app = express();
 var server = http.createServer(app);
-const keepAlive = require('./index.js');
 
 app.get("/anime", (request, response) => {
   let anime = request.query.url
@@ -34,8 +33,6 @@ const listener = server.listen(process.env.PORT, function keepAlive() {
   console.log(`AnimeWatch on port ` + listener.address().port);
 });
 
-module.exports = keepAlive;
 
-keepAlive();
  
 #enjoy 😂
