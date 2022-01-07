@@ -46,8 +46,8 @@ video {
 </head>
 <body style="text-align:center;">
 
-<video width="1000" controls>
- <source src="${mkv}" type="video/mkv">
+<video width="320" controls>
+ <source src="${mkv}">
   RedAura Is Best
 </video>
 </body>
