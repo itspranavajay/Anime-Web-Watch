@@ -3,9 +3,9 @@ const express = require('express');
 const app = express();
 var server = http.createServer(app);
 
-app.get("/anime", (request, response) => {
-  let anime = request.query.url
-  if(!anime) return response.send("Something Wrong :/")
+app.get("/moezilla", (request, response) => {
+  let moezilla = request.query.url
+  if(!moezilla) return response.send("Something Wrong :/")
   response.set('Content-Type', 'text/html');
   response.send(Buffer.from(`<!DOCTYPE html>
 <html>
@@ -21,7 +21,7 @@ video {
 <body style="text-align:center;">
 
 <video width="1000" controls>
- <source src="${anime}" type="video/mp4">
+ <source src="${moezilla}" type="video/mp4">
   RedAura Is Best
 </video>
 </body>
