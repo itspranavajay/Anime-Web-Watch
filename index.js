@@ -21,7 +21,7 @@ video {
 <body style="text-align:center;">
 
 <video width="1000" controls>
- <source src="${moezilla}" type="video/mp4">
+ <source src="${moezilla}" type="video/mp4, video/mkv">
   RedAura Is Best
 </video>
 </body>
