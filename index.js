@@ -3,9 +3,9 @@ const express = require('express');
 const app = express();
 var server = http.createServer(app);
 
-app.get("/mp4", (request, response) => {
-  let mp4 = request.query.moezilla
-  if(!mp4) return response.send("Something Wrong :/")
+app.get("/moezilla", (request, response) => {
+  let moezilla = request.query.url
+  if(!moezilla) return response.send("Something Wrong :/")
   response.set('Content-Type', 'text/html');
   response.send(Buffer.from(`<!DOCTYPE html>
 <html>
@@ -21,7 +21,7 @@ video {
 <body style="text-align:center;">
 
 <video width="1000" controls>
- <source src="${mp4}" type="video/mp4">
+ <source src="${moezilla}" type="video/mp4">
   RedAura Is Best
 </video>
 </body>
@@ -29,9 +29,9 @@ video {
 `));
 })
 
-app.get("/mkv", (request, response) => {
-  let mkv = request.query.moezilla
-  if(!mkv) return response.send("Something Wrong :/")
+app.get("/moezilla", (request, response) => {
+  let moezilla = request.query.url
+  if(!moezilla) return response.send("Something Wrong :/")
   response.set('Content-Type', 'text/html');
   response.send(Buffer.from(`<!DOCTYPE html>
 <html>
@@ -47,7 +47,7 @@ video {
 <body style="text-align:center;">
 
 <video width="320" controls>
- <source src="${mkv}">
+ <source src="${moezilla}">
   RedAura Is Best
 </video>
 </body>
